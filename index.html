@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蔣萬安專訪問答檢驗</title>
+<meta name="description" content="年代《新聞面對面》2026-10-20 蔣萬安專訪，47 題逐題拆解：表面問題、深層問題、回答等級與判級理由。">
+<meta property="og:title" content="蔣萬安專訪問答檢驗｜47 題逐題拆解">
+<meta property="og:description" content="未正面回答 16 題、只回答表面 26 題、回答深層 5 題。逐題列出問題、回答原文與判級理由。">
+<meta property="og:image" content="stats.png">
+<style>
+:root{
+  --bg:#f6f3ec; --card:#fffdf8; --line:#e3ddcf; --ink:#1d232b; --ink2:#4a525e; --muted:#6b7280;
+  --dodge:#c4423a; --surface:#7d776a; --deep:#1f5fb0;
+  --dodge-bg:#fbeceb; --surface-bg:#f0eee8; --deep-bg:#e8eff9;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"GenYoGothic2 TW","Noto Sans TC","Noto Sans CJK TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7;font-size:17px}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 80px}
+.kicker{color:var(--dodge);font-weight:700;letter-spacing:2px;font-size:15px}
+h1{font-size:34px;line-height:1.3;margin:6px 0 8px;font-weight:900}
+.lede{color:var(--ink2);margin:0 0 28px}
+h2{font-size:22px;margin:44px 0 14px;padding-bottom:8px;border-bottom:3px solid var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tile .lab{font-weight:700;font-size:15px;display:flex;align-items:center;gap:8px}
+.tile .lab i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.tile .val{font-size:36px;font-weight:900;line-height:1.2;margin-top:4px}
+.tile .val small{font-size:15px;color:var(--muted);font-weight:500}
+.bar{display:flex;gap:2px;height:30px;margin:14px 0 4px}
+.bar span{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;border-radius:4px;min-width:0}
+.topics{margin-top:18px}
+.trow{display:grid;grid-template-columns:190px 1fr;gap:12px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-size:15px}
+.trow .bar{height:24px;margin:0}
+.trow small{color:var(--muted)}
+.method{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 20px}
+.method dt{font-weight:800;margin-top:12px}
+.method dd{margin:2px 0 8px;color:var(--ink2)}
+.note{font-size:15px;color:var(--muted)}
+.filters{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid var(--line)}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:15px;cursor:pointer;font-family:inherit}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+select{font-family:inherit;font-size:15px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.count{margin-left:auto;color:var(--muted);font-size:14px}
+.q{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0}
+.q.dodge{border-left-color:var(--dodge)} .q.surface{border-left-color:var(--surface)} .q.deep{border-left-color:var(--deep)}
+.qhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.num{font-weight:900;color:var(--muted);font-size:15px}
+.badge{font-size:14px;font-weight:800;color:#fff;border-radius:6px;padding:2px 10px}
+.badge.dodge{background:var(--dodge)} .badge.surface{background:var(--surface)} .badge.deep{background:var(--deep)}
+.tag{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 10px}
+.strictflag{font-size:13px;color:var(--dodge);font-weight:700}
+.q h3{font-size:20px;line-height:1.5;margin:8px 0 10px}
+.ctx{color:var(--ink2);font-size:16px;margin:0 0 12px}
+.layers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.layer{border-radius:10px;padding:10px 14px;font-size:16px}
+.layer b{display:block;font-size:13px;letter-spacing:1px;color:var(--muted)}
+.layer.s{background:var(--surface-bg)} .layer.d{background:#f7efe2}
+.ans{margin:12px 0}
+.ans b{font-size:13px;letter-spacing:1px;color:var(--muted)}
+blockquote{margin:6px 0;padding:6px 14px;border-left:3px solid var(--line);color:var(--ink2);font-size:16px}
+.ansnote{font-style:italic;color:var(--muted);margin:6px 0}
+.verdict{border-radius:10px;padding:10px 14px;margin-top:12px;font-size:16px}
+.verdict.dodge{background:var(--dodge-bg)} .verdict.surface{background:var(--surface-bg)} .verdict.deep{background:var(--deep-bg)}
+.verdict b{display:block;font-size:13px;letter-spacing:1px;color:var(--muted)}
+.strict{margin-top:8px;font-size:15px;color:var(--ink2);border-top:1px dashed var(--line);padding-top:8px}
+footer{margin-top:50px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:640px){
+  body{font-size:16px}
+  h1{font-size:27px}
+  .tiles{grid-template-columns:1fr}
+  .trow{grid-template-columns:1fr;gap:4px}
+  .layers{grid-template-columns:1fr}
+  .count{width:100%;margin-left:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">蔣萬安專訪問答檢驗</div>
+  <h1>47 個問題，他回答了幾個？</h1>
+  <p class="lede">年代《新聞面對面》2026 年 10 月 20 日專訪台北市長蔣萬安，主持人與五位媒體人輪流提問。本頁把每一個問題拆成「字面在問什麼」與「真正要他交代什麼」，再逐題判斷他的回答處理到哪一層。</p>
+
+  <div class="tiles" id="tiles"></div>
+  <div class="bar" id="allbar"></div>
+
+  <h2>依議題</h2>
+  <div class="topics" id="topics"></div>
+
+  <h2>怎麼判斷</h2>
+  <div class="method">
+    <dl>
+      <dt>表面問題</dt><dd>題目字面上在問什麼。</dd>
+      <dt>深層問題</dt><dd>這一題真正要受訪者交代的事：政績有沒有感、責任歸誰、前後說法是否一致、要不要明確表態。</dd>
+      <dt><span style="color:var(--dodge)">未正面回答</span></dt><dd>轉移話題、只表態不給內容、把問題改寫成自己想答的版本，或在對方給的選項中都不選。</dd>
+      <dt><span style="color:var(--surface)">只回答表面問題</span></dt><dd>答了字面，但繞開了題目真正要他交代的核心。</dd>
+      <dt><span style="color:var(--deep)">回答深層問題</span></dt><dd>直接處理核心：給出具體立場、數字、承諾，或承認責任。</dd>
+      <dt>邊界題一律從嚴</dt><dd>只有否認、只有自我辯護而沒有佐證，或先改寫題目說法再回答，都不算回答到深層。共有 6 題依此標準改判，各題都附上說明。</dd>
+    </dl>
+  </div>
+  <p class="note">引句取自節目畫面字幕，「……」表示節略。字幕可能與原音有少量出入。蔣萬安的說法均為其本人說法，本頁照錄，不代表已經查證屬實。</p>
+
+  <h2>逐題拆解</h2>
+  <div class="filters" role="group" aria-label="篩選">
+    <button class="chip" data-g="all" aria-pressed="true">全部</button>
+    <button class="chip" data-g="dodge" aria-pressed="false">未正面回答</button>
+    <button class="chip" data-g="surface" aria-pressed="false">只回答表面</button>
+    <button class="chip" data-g="deep" aria-pressed="false">回答深層</button>
+    <select id="topicSel" aria-label="議題"><option value="all">所有議題</option></select>
+    <span class="count" id="count"></span>
+  </div>
+  <div id="list"></div>
+
+  <footer>
+    資料來源：年代新聞台《新聞面對面》2026-10-20 節目影片（YouTube）。<br>
+    分析：TEANAU。本頁以節目畫面字幕逐題判讀，問題依節目中出現順序編號。
+  </footer>
+</div>
+<script src="data.js"></script>
+<script>
+const G={dodge:["未正面回答","var(--dodge)"],surface:["只回答表面","var(--surface)"],deep:["回答深層","var(--deep)"]};
+const ORDER=["dodge","surface","deep"];
+const QA=window.QA;
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cnt=list=>{const c={dodge:0,surface:0,deep:0};list.forEach(q=>c[q.grade]++);return c};
+const bar=(c,total)=>ORDER.filter(k=>c[k]).map(k=>`<span style="flex:${c[k]};background:${G[k][1]}" title="${G[k][0]} ${c[k]} 題">${c[k]}</span>`).join("");
+
+const all=cnt(QA);
+document.getElementById("tiles").innerHTML=ORDER.map(k=>`<div class="tile"><div class="lab"><i style="background:${G[k][1]}"></i>${G[k][0]}</div><div class="val">${Math.round(all[k]/QA.length*100)}% <small>${all[k]}／${QA.length} 題</small></div></div>`).join("");
+document.getElementById("allbar").innerHTML=bar(all);
+
+const topics=[...new Set(QA.map(q=>q.topic))];
+const tstats=topics.map(t=>{const l=QA.filter(q=>q.topic===t);return {t,c:cnt(l),n:l.length}}).sort((a,b)=>b.c.dodge/b.n-a.c.dodge/a.n||b.n-a.n);
+document.getElementById("topics").innerHTML=tstats.map(x=>`<div class="trow"><div>${x.t} <small>${x.n} 題</small></div><div class="bar">${bar(x.c)}</div></div>`).join("");
+const sel=document.getElementById("topicSel");
+tstats.forEach(x=>sel.insertAdjacentHTML("beforeend",`<option value="${x.t}">${x.t}</option>`));
+
+function card(q){
+  const ans=q.answer.length?q.answer.map(a=>`<blockquote>「${esc(a)}」</blockquote>`).join(""):`<p class="ansnote">${esc(q.note)}</p>`;
+  const strict=q.strict?`<div class="strict"><b style="color:var(--dodge)">從嚴改判</b>（原判：${G[q.strict.from][0]}）　${esc(q.strictNote)}</div>`:"";
+  return `<article class="q ${q.grade}" id="q${q.n}">
+    <div class="qhead"><span class="num">第 ${q.n} 題</span><span class="badge ${q.grade}">${G[q.grade][0]}</span><span class="tag">${q.topic}</span>${q.strict?'<span class="strictflag">邊界題・從嚴</span>':""}</div>
+    <h3>${esc(q.surface)}</h3>
+    <p class="ctx">${esc(q.ask)}</p>
+    <div class="layers"><div class="layer s"><b>表面問題</b>${esc(q.surface)}</div><div class="layer d"><b>深層問題</b>${esc(q.deep)}</div></div>
+    <div class="ans"><b>蔣萬安的回答</b>${ans}</div>
+    <div class="verdict ${q.grade}"><b>判級理由</b>${esc(q.analysis)}${strict}</div>
+  </article>`;
+}
+let fg="all",ft="all";
+function render(){
+  const l=QA.filter(q=>(fg==="all"||q.grade===fg)&&(ft==="all"||q.topic===ft));
+  document.getElementById("list").innerHTML=l.map(card).join("")||'<p class="note">沒有符合的題目。</p>';
+  document.getElementById("count").textContent=`顯示 ${l.length}／${QA.length} 題`;
+}
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+  fg=b.dataset.g;document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render();
+}));
+sel.addEventListener("change",()=>{ft=sel.value;render()});
+render();
+</script>
+</body>
+</html>
